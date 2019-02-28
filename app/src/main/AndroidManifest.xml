@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.jade.three">
 
     <application
@@ -16,6 +17,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
-</manifest>
+        <activity android:name=".ThreadTestActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+            <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="threadtest"
+                    android:scheme="3d" />
+
+        </intent-filter>
+    </activity>
+</application>
+
+    </manifest>
